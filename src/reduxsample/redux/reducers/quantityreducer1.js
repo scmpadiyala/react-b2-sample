@@ -6,21 +6,9 @@ const initialState = {
 
 const quantityReducer = (state = initialState, action) => {
   console.log(
-    "3. Quantity Reducer : ~~~ " + action.type + " :: " + action.itemTitle
+    "3.a Quantity Reducer : ~~~ " + action.type + " :: " + action.itemTitle
   );
   switch (action.type) {
-    case ADD_ITEM: {
-      console.log("3.1. Current state : " + state.itemTitles);
-
-      let returnState = {
-        itemTitles: state.itemTitles.concat(action.itemTitle)
-      };
-
-      console.log("3.2. New state : " + action.itemTitle + " : " + returnState);
-
-      return returnState;
-    }
-
     case DEL_ITEM: {
       console.log("4.1.a Delete Title : " + state.itemTitles);
 

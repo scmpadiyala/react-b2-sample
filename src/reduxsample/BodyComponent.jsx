@@ -23,7 +23,7 @@ class BodyComponent1 extends Component {
   }
 
   render() {
-    console.log("Welcome " + this.props.itemTitles.length);
+    // console.log("Welcome " + this.props.itemTitles.length);
     return (
       <div>
         <h2>Body Component</h2>

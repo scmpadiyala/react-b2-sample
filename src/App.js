@@ -1,16 +1,31 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import ResearchHome from "./propstate/ResearchHome";
+import MyHome from "./routing/researchHome";
 
 class App extends Component {
+  constructor() {
+    super();
+    //console.log("App component constructor called");
+  }
+
+  componentWillMount() {
+    // console.log("componentWillMount - called");
+  }
+
+  componentDidMount() {
+    //console.log("componentDidMount - called");
+  }
+
   render() {
+    //console.log("App component render called");
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">Welcome to my first react program</p>
+      <div>
+        <h3> XYZ Reaseach</h3>
+        <hr />
+        {/* <ResearchHome projName="Ocean Waves" /> */}
+        <MyHome />
       </div>
     );
   }

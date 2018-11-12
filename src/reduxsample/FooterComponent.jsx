@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import { deleteItem } from "./redux/actions/quantityactions";
 import { connect } from "react-redux";
 
-const mapDispatchToProps = dispatch => {
-  console.log(" mapDispatchToProps : called ");
-  return {
-    handleReduceQuantity: index => dispatch(deleteItem(index))
-  };
-};
+// const mapDispatchToProps = dispatch => {
+//   console.log(" mapDispatchToProps : called ");
+//   return {
+//     handleReduceQuantity: index => dispatch(deleteItem(index))
+//   };
+// };
 
 class FooterComponent1 extends Component {
   state = {};
@@ -20,7 +20,7 @@ class FooterComponent1 extends Component {
   render() {
     return (
       <div>
-        <p>Footer component</p>
+        <p>Footer component </p>
 
         <button onClick={this.handleReduceQuantity}> - Reduce Quantity </button>
       </div>
@@ -28,9 +28,11 @@ class FooterComponent1 extends Component {
   }
 }
 
-const FooterComponent = connect(
-  null,
-  mapDispatchToProps
-)(FooterComponent1);
+// const FooterComponent = connect(
+//   null,
+//   mapDispatchToProps
+// )(FooterComponent1);
 
-export default FooterComponent;
+// export default FooterComponent;
+
+export default FooterComponent1;

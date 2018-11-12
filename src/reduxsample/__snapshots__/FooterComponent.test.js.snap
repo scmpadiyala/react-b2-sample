@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FooterComponent1 > renders correctly 1`] = `
+<div>
+  <p>
+    Footer component 
+  </p>
+  <button
+    onClick={[Function]}
+  >
+     - Reduce Quantity 
+  </button>
+</div>
+`;
