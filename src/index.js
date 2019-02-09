@@ -5,14 +5,29 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import CoreApp from "./reduxsample/CoreApp";
 import { Provider } from "react-redux";
-import samplestore from "./reduxsample/redux/store/samplestore";
 
 import AsyncComponent from "./reduxsample/aync-redux/aynccoponent";
 import userstore from "./reduxsample/aync-redux/ayncstore";
 
 import SampleForm from "./jestenzymetest/sampleform";
+import OrderManagementComponent from "./fireoperations/OrderMgmt";
+import mystore from "./redux/store/mystore";
+import CreateOrder from "./ordermgmt/createorder";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={mystore}>
+    <CreateOrder />
+  </Provider>,
+
+  document.getElementById("root")
+);
+
+// ReactDOM.render(<App />, document.getElementById("root"));
+
+// ReactDOM.render(
+//   <OrderManagementComponent test=" Welcome by Vijay" />,
+//   document.getElementById("root")
+// );
 
 //console.log("Store " + samplestore.dispatch);
 // ReactDOM.render(

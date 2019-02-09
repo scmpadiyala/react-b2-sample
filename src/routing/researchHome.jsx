@@ -6,6 +6,7 @@ import ResearchDetails from "./researchdetails";
 
 class MyHome extends Component {
   state = {};
+  
   render() {
     return (
       <Router>
